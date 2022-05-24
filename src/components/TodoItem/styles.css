@@ -1,0 +1,31 @@
+.title-done {
+    opacity: 0.5;
+    text-decoration: line-through;
+    transition: opacity .3s ease-in-out;
+}
+
+.todo-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+@media (max-width: 450px) {
+    .todo-item {
+        flex-direction: column;
+    }
+
+    .todo-text {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+    .todo-btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo-btn:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
